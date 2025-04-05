@@ -6,9 +6,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Здраве от Природата - Начало</title>
-  <!-- CSS тук (същият като в канваса) -->
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: url('nature-header.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+    .logo {
+      max-height: 120px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #a5d6a7;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .goals, .reviews, .ad-section, .products, .faq, .badges, .contact-btn {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      border: 2px solid #2e7d32;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #2e7d32;
+      background-color: #e8f5e9;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .contact-btn {
+      text-align: center;
+    }
+    .contact-btn a {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .contact-btn button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .contact-btn button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
 <body>
-  <!-- Цялото тяло на сайта - лого, име DiaVita, меню, продукти и други секции -->
+  <header>
+    <img src="images/logo.jpg" alt="DiaVita лого" class="logo">
+    <h1 style="font-family: 'Trebuchet MS', sans-serif; font-size: 3.5em; color: #2e7d32; font-weight: 800; letter-spacing: 2px; margin-top: 10px;">DiaVita</h1>
+    <p>Вашият доверен партньор за натурални хранителни добавки</p>
+  </header>
+
+  <nav>
+    <a href="#">Начало</a>
+    <a href="products.html">Продукти</a>
+    <a href="about.html">За нас</a>
+    <a href="blog.html">Блог</a>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Добре дошли в света на здравето и баланса</h2>
+      <p>Ние предлагаме висококачествени добавки, вдъхновени от силата на природата.</p>
+    </section>
+
+    <section class="badges">
+      <div class="badge">100% Натурално</div>
+      <div class="badge">Сертифицирани продукти</div>
+      <div class="badge">Доставка за 24 ч.</div>
+    </section>
+
+    <section class="products">
+      <div class="product">
+        <img src="images/insurezist.jpg" alt="Инсурезист">
+        <h3>Инсурезист</h3>
+        <p>Баланс на кръвната захар, метаболизъм и апетит</p>
+      </div>
+      <div class="product">
+        <img src="images/ketoni.jpg" alt="Малинови кетони">
+        <h3>Малинови кетони</h3>
+        <p>Подпомагат отслабването и обмяната на веществата</p>
+      </div>
+    </section>
+
+    <section class="goals">
+      <h2>Нашата мисия</h2>
+      <p>Да предоставим безопасни, ефективни и натурални продукти за поддържане на здравословен начин на живот.</p>
+      <h3>Цели:</h3>
+      <ul>
+        <li>Да вдъхновяваме към по-здравословен избор</li>
+        <li>Да предложим натурални решения за ежедневни нужди</li>
+        <li>Да изградим доверие чрез качество и прозрачност</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2>Отзиви от доволни клиенти</h2>
+      <blockquote>
+        "Уникални добавки! След 2 седмици се чувствам като нов човек."
+        <br>– Мария Петрова
+      </blockquote>
+      <blockquote>
+        "Благодаря за бързата доставка и личното отношение!"
+        <br>– Георги Тодоров
+      </blockquote>
+    </section>
+
+    <section class="faq">
+      <h2>Често задавани въпроси</h2>
+      <div class="faq-item">
+        <strong>Как да направя поръчка?</strong>
+        <p>Натиснете бутона „Поръчай“ и следвайте инструкциите в Messenger.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Какви са начините на плащане?</strong>
+        <p>Плащане с наложен платеж при доставка или онлайн чрез карта.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Имат ли продуктите странични ефекти?</strong>
+        <p>Всички продукти са натурални и без вредни съставки, но се препоръчва консултация с лекар при съмнения.</p>
+      </div>
+    </section>
+
+    <section class="ad-section">
+      <h2>Реклама</h2>
+      <p>Открийте силата на билките от природата – специални оферти този месец!</p>
+      <img src="images/herbs-banner.jpg" alt="Билки от природата" style="width:100%; height:auto; border-radius: 10px;">
+    </section>
+
+    <section class="contact-btn">
+      <a href="https://m.me/yourpage">Свържете се с нас в Messenger</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Здраве от Природата. Всички права запазени.
+  </footer>
 </body>
 </html>
